@@ -16,6 +16,6 @@ export default function App() {
         <Button title={"TO PAGE"} onPress={() => {
             router.push("/other");
         }}/>
-        <Camera style={{height: "100%"}} ref={(e) => setCamera(e)}/>
+        <Camera useCamera2Api={true} style={{height: "100%"}} ref={(e) => setCamera(e)}/>
     </View>
 }
